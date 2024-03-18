@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>3DStore | Home</title>
+	<link rel="stylesheet" href="src/style.css">
+	<link rel="icon" href="favicon.ico">
+</head>
+
+<body>
+	<nav class="navbar">
+		<div>
+			<a href="./index.html">
+				<div class="nav-title">3DStore</div>
+			</a>
+		</div>
+		<div>
+			<div class="search-section">
+				<input type="text" class="search-bar" placeholder="Search for products" id="searchBar">
+				<div class="search-button">
+					<div class="search-btn-holder" id="searchButton">
+						<img src="src/icons/search.svg" alt="" class="search-icon">
+					</div>
+				</div>
+			</div>
+		</div>
+		<span id="signedIn">
+			<div class="signedin-section">
+				<span class="signedin-tag" id="signedInName">User</span> <span id="isSeller">&nbsp;(Seller)
+					<a href="add.html">
+						<button class="button register-button">Add</button>
+					</a>
+					<a href="manage.html">
+						<button class="button">Manage</button>
+					</a>
+				</span>
+				<button class="button login-button" onclick="signOutUser()">Sign Out</button>
+			</div>
+		</span>
+		<div class="button-section" id="notSignedIn">
+			<a href="login.html">
+				<div class="button login-button">Login</div>
+			</a> <a href="register.html">
+				<div class="button register-button">Register</div>
+			</a>
+		</div>
+	</nav>
+	<div class="categories-section" id="categoriesNav">
+		<div class="category-label active-category-label">All</div>
+	</div>
+	<div class="nav-placeholder"></div>
+	<div class="main-jumbotron" id="jumbotronDisplay">
+	</div>
+	<div class="main-content" id="productDisplay">
+	</div>
+	<script src="src/app.js"></script>
+</body>
+
+</html>

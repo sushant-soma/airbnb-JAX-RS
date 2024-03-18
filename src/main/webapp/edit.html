@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>3DStore | Edit Product</title>
+<link rel="stylesheet" href="src/style.css">
+<link rel="icon" href="favicon.ico">
+</head>
+
+<body>
+	<nav class="navbar">
+		<div>
+			<a href="./index.html">
+				<div class="nav-title">3DStore</div>
+			</a>
+		</div>
+		<span id="signedIn">
+			<div class="signedin-section">
+				<div>
+					<span class="signedin-tag" id="signedInName">User</span> <span
+						id="isSeller">&nbsp;(Seller)</span>
+				</div>
+				<button class="button" onclick="signOutUser()">Sign Out</button>
+			</div>
+		</span>
+		<div class="button-section" id="notSignedIn">
+			<a href="login.html">
+				<div class="button login-button">Login</div>
+			</a> <a href="register.html">
+				<div class="button register-button">Register</div>
+			</a>
+		</div>
+	</nav>
+	<div class="nav-placeholder"></div>
+	<div class="add-main">
+		<div class="add-jumbotron">Edit Product</div>
+		<div id="previewContent"></div>
+		<div class="add-content">
+			<div class="input-section">
+				<div class="input-section-title">Product Name</div>
+				<div class="input-section-content">
+					<input type="text" placeholder="Product Name" id="name">
+				</div>
+			</div>
+			<div class="input-section">
+				<div class="input-section-title">Product Price(in INR)</div>
+				<div class="input-section-content">
+					<input type="text" placeholder="120.00" id="price">
+				</div>
+			</div>
+			<div class="input-section">
+				<div class="input-section-title">Product Cover(Image URL)</div>
+				<div class="input-section-content">
+					<input type="text" placeholder="https://example.com/image.jpg"
+						id="cover">
+				</div>
+			</div>
+			<div class="input-section">
+				<div class="input-section-title">Product Description</div>
+				<div class="input-section-content">
+					<input type="text" placeholder="Product Details" id="description">
+				</div>
+			</div>
+			<div class="input-section">
+				<div class="input-section-title">Product Category</div>
+				<div class="input-section-content">
+					<select name="category" id="category" class="category">
+					</select>
+				</div>
+			</div>
+			<div class="input-section">
+				<div class="input-section-title">Product Status</div>
+				<div class="input-section-content">
+					<select name="status" id="status" class="status">
+						<option value="true">Available</option>
+						<option value="false">Out of Stock</option>
+					</select>
+				</div>
+			</div>
+			<div class="login-button-section">
+				<div class="button login-submit login-btn" id="submit">Update</div>
+				<a href="index.html">
+					<div class="button login-back login-btn">Back</div>
+				</a>
+			</div>
+		</div>
+	</div>
+	<script src="src/edit.js"></script>
+</body>
+
+</html>

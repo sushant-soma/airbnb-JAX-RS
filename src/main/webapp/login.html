@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>3DStore | Login</title>
+	<link rel="stylesheet" href="src/style.css">
+	<link rel="icon" href="favicon.ico">
+</head>
+
+<body>
+	<div class="login-holder">
+		<div class="login-section">
+			<div class="title-holder">
+				<div class="login-title">3DStore - Login</div>
+			</div>
+			<div class="input-section-main">
+				<div class="input-section">
+					<div class="input-section-title">Login as</div>
+					<div class="input-section-content">
+						<select name="role" id="role" class="role">
+							<option value="customer">Customer</option>
+							<option value="seller">Seller</option>
+						</select>
+					</div>
+				</div>
+				<div class="input-section">
+					<div class="input-section-title">Email Address</div>
+					<div class="input-section-content">
+						<input type="text" placeholder="jon@doe.com" id="email">
+					</div>
+				</div>
+				<div class="input-section">
+					<div class="input-section-title">Password</div>
+					<div class="input-section-content">
+						<input type="password" placeholder="Password" id="password">
+					</div>
+				</div>
+				<div class="login-button-section">
+					<div class="button login-submit login-btn" id="submit">Login</div>
+					<a href="index.html">
+						<div class="button login-back login-btn">Back</div>
+					</a>
+				</div>
+				<div></div>
+			</div>
+		</div>
+	</div>
+	<script src="src/login.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3DStore | Manage Products</title>
+    <link rel="stylesheet" href="src/style.css">
+    <link rel="icon" href="favicon.ico">
+</head>
+
+<body>
+    <nav class="navbar">
+        <div>
+            <a href="./index.html">
+                <div class="nav-title">3DStore</div>
+            </a>
+        </div>
+        <span id="signedIn">
+            <div class="signedin-section">
+                <div>
+                    <span class="signedin-tag" id="signedInName">User</span>
+                    <span id="isSeller">&nbsp;(Seller)</span>
+                </div>
+                <button class="button" onclick="signOutUser()">Sign Out</button>
+            </div>
+        </span>
+        <div class="button-section" id="notSignedIn">
+            <a href="login.html">
+                <div class="button login-button">Login</div>
+            </a> <a href="register.html">
+                <div class="button register-button">Register</div>
+            </a>
+        </div>
+    </nav>
+    <div class="nav-placeholder"></div>
+    <div class="add-main">
+        <div class="add-jumbotron">
+            Manage Products
+        </div>
+        <div class="add-content" id="manageDisplay">
+        </div>
+    </div>
+    <script src="src/manage.js"></script>
+</body>
+
+</html>
